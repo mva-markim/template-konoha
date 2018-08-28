@@ -1,3 +1,3 @@
-##TEMPLATE TCC
+## TEMPLATE TCC
 
-###Only with HTML, JS and CSS
+### Only with HTML, JS and CSS
