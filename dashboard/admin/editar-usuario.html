@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Konoha - Meus Dados</title>
+    <link href="../../mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/konoha.css">
+    <title>Konoha - Moderador</title>
+</head>
+
+<body>
+    <span class="btn-menu"><button onclick="btnMenuDashboard()"><i class="mdi mdi-menu" id="menuIcon"></i></button><i class="mdi mdi-xing"></i>onoha</span>
+    <nav class="menu" id="menuDashboard">
+        <div class="plano-de-fundo">
+            <figure>
+                <a href="alterar-foto.html">
+                    <img src="../../img/13139233_976693842438104_1197872191447127231_n.jpg" alt="minha foto">
+                </a>
+            </figure>
+            <span>Jussara Rezende</span>
+        </div>
+        <button id="sair" class="btnSair" onmousemove="mudarTextoBotao()" onmouseout="voltarTextoBotao()"><i class="mdi mdi-circle"></i>Conectado</button>
+
+        <ul>
+            <li><a href="dashboard.html"><i class="mdi mdi-home"></i>Home</a></li>
+            <li><a href="meus-dados.html"><i class="mdi mdi-archive"></i>Meus Dados</a></li>
+            <li><a href="agendas.html"><i class="mdi mdi-book-variant"></i>Agendas de Eventos</a></li>
+            <li><a href="eventos.html"><i class="mdi mdi-star"></i>Eventos</a></li>
+            <li><a href="usuarios.html" class="active"><i class="mdi mdi-account-multiple"></i>Usuários</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-dashboard">
+        <h1 class="title-dashboard"><i class="mdi mdi-account-edit dark-blue"></i>Editar usuário</h1>
+        <a class="link-voltar" href="usuarios.html"><i class="mdi mdi-arrow-left"></i>Voltar</a>
+
+        <form action="" class="form-konoha form-responsive">
+
+            <label>Perfil do usuário</label>
+            <div class="select-type-user">
+                <input type="radio" name="tipoUser" id="admin">
+                <label for="admin">Admin</label>
+                <input type="radio" name="tipoUser" id="moderador" checked>
+                <label for="moderador">Moderador</label>
+                <input type="radio" name="tipoUser" id="aluno">
+                <label for="aluno">Aluno</label>
+            </div>
+
+            <label for="nome">Nome do usuário</label><input type="text" id="nome" name="nome" placeholder="Digite o nome do usuário" value="João da Silva Costa">
+
+            <label for="cpf">CPF do usuário</label><input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" value="195.384.748-25">
+
+            <label for="dtNasc">Data de nascimento</label><input type="text" id="dtNasc" name="dtNasc" placeholder="dia/mês/ano" value="12/10/1992">
+
+            <label for="email">Email do usuário</label><input type="text" id="email" name="email" placeholder="Digite o email do usuário" value="jj.silva@yahoo.com">
+
+            <label class="label-k">Gênero</label>
+
+            <div class="options-select">
+                <input type="radio" name="genero" id="men" value="m">
+                <label for="men" class="men">Masculino <i class="mdi mdi-gender-male"></i></label>
+
+                <input type="radio" name="genero" id="woman" value="woman">
+                <label for="woman" class="woman">Feminino <i class="mdi mdi-gender-female"></i></label>
+            </div>
+
+            <label for="fotoPerfil">Foto 3x4</label>
+            <div class="preview-image">
+                <label for="fotoPerfil" id="labelUploadImage" class="label-upload-image"><i class="mdi mdi-account-outline"></i></label><input type="file" name="fotoPerfil" id="fotoPerfil" onchange="loadFile()"> <img id="previewImage" />
+                <label for="fotoPerfil" class="cancel-upload" id="cancelUpload" onclick="cancelUpload()"><i class="mdi mdi-cancel"></i>Enviar outra imagem</label>
+            </div>
+
+            <label for="permissaoManterGendas">Gestor de agendas</label>
+            <div class="state-user">
+                <input type="checkbox" id="permissaoManterGendas">
+                <label for="permissaoManterGendas" class="yes">SIM</label>
+                <label for="permissaoManterGendas" class="no">NÃO</label>
+            </div>
+
+            <label for="tipoUsuario">Usuário ativo</label>
+            <div class="state-user">
+                <input type="checkbox" id="tipoUsuario" checked>
+                <label for="tipoUsuario" class="yes">SIM</label>
+                <label for="tipoUsuario" class="no">NÃO</label>
+            </div>
+
+
+            <button type="submit" class="btn btn-blue">Salvar Alterações</button>
+        </form>
+
+
+    </main>
+</body>
+
+<script src="../../js/konoha.js"></script>
+
+</html>

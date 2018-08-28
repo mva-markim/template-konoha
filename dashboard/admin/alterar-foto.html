@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/konoha.css">
+    <title>Konoha - Aluno</title>
+</head>
+
+<body>
+    <span class="btn-menu"><button onclick="btnMenuDashboard()"><i class="mdi mdi-menu" id="menuIcon"></i></button><i class="mdi mdi-xing"></i>onoha</span>
+    <nav class="menu" id="menuDashboard">
+        <div class="plano-de-fundo">
+            <figure>
+                <img src="../../img/13139233_976693842438104_1197872191447127231_n.jpg" alt="minha foto">
+            </figure>
+            <span>Jussara Rezende</span>
+        </div>
+        <button id="sair" class="btnSair" onmousemove="mudarTextoBotao()" onmouseout="voltarTextoBotao()"><i class="mdi mdi-circle"></i>Conectado</button>
+
+        <ul>
+            <li><a href="dashboard.html"><i class="mdi mdi-home"></i>Home</a></li>
+            <li><a href="meus-dados.html" class="active"><i class="mdi mdi-archive"></i>Meus Dados</a></li>
+            <li><a href="agendas.html"><i class="mdi mdi-book-variant"></i>Agendas de Eventos</a></li>
+            <li><a href="eventos.html"><i class="mdi mdi-star"></i>Eventos</a></li>
+            <li><a href="usuarios.html"><i class="mdi mdi-account-multiple"></i>Usuários</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-dashboard">
+        <h1 class="title-dashboard"><i class="mdi mdi-account-edit blue"></i>Alterar foto</h1>
+        <a class="link-voltar" href="meus-dados.html"><i class="mdi mdi-arrow-left"></i>Voltar</a>
+        <form class="form-konoha alterar-foto">
+            <label for="fotoPerfil">Selecione sua foto</label>
+            <div class="preview-image">
+                <label for="fotoPerfil" id="labelUploadImage" class="label-upload-image"><i class="mdi mdi-account-outline"></i></label><input type="file" name="fotoPerfil" id="fotoPerfil" onchange="loadFile()"> <img id="previewImage" />
+                <label for="fotoPerfil" class="cancel-upload" id="cancelUpload" onclick="cancelUpload()"><i class="mdi mdi-cancel"></i>Enviar outra imagem</label>
+            </div>
+            <button type="submit" class="btn btn-blue">Alterar foto</button>
+
+        </form>
+
+    </main>
+</body>
+<script src="../../js/konoha.js"></script>
+
+</html>

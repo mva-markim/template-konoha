@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Criar conta</title>
+    <link rel="stylesheet" href="css/konoha.css">
+    <link href="mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <style>
+        .title-page {
+            font-size: 25px;
+            margin-bottom: 50px;
+            border-left: 3px solid deepskyblue;
+            padding: 25px;
+            box-shadow: 2px 2px 2px #eee
+        }
+        
+        .title-page .mdi-xing {
+            margin-right: -5px
+        }
+        
+        .title-page .mdi-account-plus-outline {
+            padding: 20px 25px;
+            border-radius: 50%;
+            margin-right: 15px;
+            font-size: 35px;
+            border: 1px solid #eee;
+            background-color: #fff
+        }
+        /*Inputs, checkbox, select e botões*/
+        
+        .label-k {
+            background-color: #eee;
+            padding: 8px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            z-index: 2;
+        }
+        
+        .input-k {
+            display: block;
+            font-size: 18px;
+            outline: 0;
+            padding: 12px 5px 7px 10px;
+            margin-left: 15px;
+            border-radius: 3px;
+            border: 1px solid #ccc;
+            width: 100%;
+            max-width: 500px;
+            margin-bottom: 25px;
+        }
+        
+        .input-k:focus {
+            border: 1px solid #999;
+        }
+        
+        .inputs-inline {
+            max-width: 500px;
+            background-color: #2EB801;
+        }
+        
+        .inputs-inline div {
+            width: 45%;
+            float: left;
+            margin-right: 20px;
+        }
+        /*Inputs, checkbox, select e botões*/
+        /*Select genero*/
+        
+        .options-select {
+            display: block;
+            padding: 12px 15px 8px;
+            margin-bottom: 25px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            max-width: 500px;
+            margin-left: 15px;
+        }
+        
+        .options-select input[type="radio"] {
+            display: none;
+        }
+        
+        .options-select label,
+        .upload-image {
+            padding: 7px 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block
+        }
+        
+        .options-select label:hover,
+        .upload-image:hover {
+            border: 1px solid #555;
+            cursor: pointer;
+        }
+        
+        .options-select input[type="radio"]:checked+.men {
+            border: 1px solid deepskyblue;
+            color: deepskyblue;
+            background-color: rgba(0, 191, 255, 0.1);
+            transition: all .5s
+        }
+        
+        .options-select input[type="radio"]:checked+.woman {
+            border: 1px solid rgb(228, 55, 147);
+            color: rgb(228, 55, 147);
+            background-color: rgba(228, 55, 147, .1);
+            transition: all .5s
+        }
+        
+        input[type="file"] {
+            display: none
+        }
+        /*Botões*/
+        
+        .btn {
+            background: none;
+            border: 0;
+            outline: 0;
+            padding: 10px 15px;
+        }
+        
+        .btn:hover {
+            cursor: pointer
+        }
+        
+        .btn:focus {
+            opacity: .8;
+        }
+        
+        .btn:active {
+            opacity: .5
+        }
+        
+        .btn-blue {
+            color: #eee;
+            background-color: deepskyblue
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="menu-go-to-home">
+        <a href="home.html" class="btn-voltar" title="Voltar para a página inicial"><i class="mdi mdi-chevron-left"></i><span class="texto-btn-voltar">Voltar</span></a>
+        <span><i class="mdi mdi-xing"></i><span class="texto-logo">onoha<span/></span>
+    </nav>
+
+    <main>
+        <h1 class="title-page"> <i class="mdi mdi-account-plus-outline"></i> Preencha os dados abaixo para criar sua conta no <i class="mdi mdi-xing"></i>onoha</h1>
+
+
+        <form class="formulario">
+            <label for="nome" class="label-k">Nome</label><input type="text" name="nome" id="nome" class="input-k">
+
+            <label for="cpf" class="label-k">CPF</label><input type="text" name="cpf" id="cpf" class="input-k">
+
+            <label for="dataNascimento" class="label-k">Data de Nascimento</label><input type="text" name="dataNascimento" id="dataNascimento" class="input-k">
+
+            <label class="label-k">Gênero</label>
+            <div class="options-select">
+
+                <input type="radio" name="genero" id="men" value="m">
+                <label for="men" class="men">Masculino <i class="mdi mdi-gender-male"></i></label>
+
+                <input type="radio" name="genero" id="woman" value="woman">
+                <label for="woman" class="woman">Feminino <i class="mdi mdi-gender-female"></i></label>
+
+            </div>
+
+            <label for="email" class="label-k">Email</label><input type="email" name="email" id="email" class="input-k">
+
+
+            <label>Foto do meu perfil</label> <label for="fotoPerfil" class="upload-image"><i class="mdi mdi-upload"></i> Selecionar foto</label><input type="file" name="fotoPerfil" id="fotoPerfil">
+
+            <button type="submit" class="btn btn-blue">Criar minha conta</button>
+        </form>
+    </main>
+
+</body>
+
+</html>
+
+</html>

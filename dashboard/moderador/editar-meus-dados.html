@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/konoha.css">
+    <title>Konoha - Aluno</title>
+</head>
+
+<body>
+    <span class="btn-menu"><button onclick="btnMenuDashboard()"><i class="mdi mdi-menu" id="menuIcon"></i></button><i class="mdi mdi-xing"></i>onoha</span>
+    <nav class="menu" id="menuDashboard">
+        <div class="plano-de-fundo">
+            <figure>
+                <img src="../../img/rodolfocruz_1462736986_49.jpg" alt="minha foto">
+            </figure>
+            <span>Rodolfo Cruz</span>
+        </div>
+        <button id="sair" class="btnSair" onmousemove="mudarTextoBotao()" onmouseout="voltarTextoBotao()"><i class="mdi mdi-circle"></i>Conectado</button>
+
+        <ul>
+            <li><a href=""><i class="mdi mdi-home"></i>Home</a></li>
+            <li><a href="meus-dados.html" class="active"><i class="mdi mdi-archive"></i>Meus Dados</a></li>
+            <li><a href="agendas.html"><i class="mdi mdi-book-variant"></i>Agendas de Eventos</a></li>
+            <li><a href="meus-eventos.html"><i class="mdi mdi-star"></i>Meus Eventos</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-dashboard">
+        <h1 class="title-dashboard"><i class="mdi mdi-account-edit blue"></i>Alterar meus dados</h1>
+        <a class="link-voltar" href="meus-dados.html"><i class="mdi mdi-arrow-left"></i>Voltar</a>
+        <form class="form-konoha editar-dados">
+            <label for="nome" class="label-k">Nome Completo</label><input type="text" name="nome" id="nome" class="input-k" placeholder="Digite seu nome completo" value="Kristen Bell The Good Place">
+
+            <label for="dataNascimento" class="label-k">Data de Nascimento</label><input type="text" name="dataNascimento" id="dataNascimento" class="input-k" placeholder="dia/mês/ano" value="16/08/1985">
+
+            <label for="cpf" class="label-k">CPF</label><input type="text" name="cpf" id="cpf" class="input-k" placeholder="000.000.000-00" value="091.357.222-54">
+
+            <label class="label-k">Gênero</label>
+
+            <div class="options-select">
+                <input type="radio" name="genero" id="men" value="m">
+                <label for="men" class="men">Masculino <i class="mdi mdi-gender-male"></i></label>
+
+                <input type="radio" name="genero" id="woman" value="woman" checked>
+                <label for="woman" class="woman">Feminino <i class="mdi mdi-gender-female"></i></label>
+            </div>
+
+            <label for="fotoPerfil">Selecione sua foto</label>
+            <div class="preview-image">
+                <label for="fotoPerfil" id="labelUploadImage" class="label-upload-image"><i class="mdi mdi-account-outline"></i></label><input type="file" name="fotoPerfil" id="fotoPerfil" onchange="loadFile()"> <img id="previewImage" />
+                <label for="fotoPerfil" class="cancel-upload" id="cancelUpload" onclick="cancelUpload()"><i class="mdi mdi-cancel"></i>Enviar outra imagem</label>
+            </div>
+            <button type="submit" class="btn btn-blue">Salvar alterações</button>
+
+        </form>
+
+    </main>
+</body>
+<script src="../../js/konoha.js"></script>
+
+</html>

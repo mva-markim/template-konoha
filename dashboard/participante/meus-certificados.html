@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/konoha.css">
+    <title>Konoha - Aluno</title>
+</head>
+
+<body>
+    <span class="btn-menu"><button onclick="btnMenuDashboard()"><i class="mdi mdi-menu" id="menuIcon"></i></button><i class="mdi mdi-xing"></i>onoha</span>
+    <nav class="menu" id="menuDashboard">
+        <div class="plano-de-fundo">
+            <figure>
+                <a href="alterar-foto.html" title="Alterar minha foto de perfil">
+                    <img src="../../img/Kristen-Bell.jpg" alt="minha foto">
+                </a>
+            </figure>
+            <span>Juliana Alves</span>
+        </div>
+        <button id="sair" class="btnSair" onmousemove="mudarTextoBotao()" onmouseout="voltarTextoBotao()"><i class="mdi mdi-circle"></i>Conectado</button>
+
+        <ul>
+            <li><a href="dashboard-aluno.html"><i class="mdi mdi-home"></i>Home</a></li>
+            <li><a href="../../home.html"><i class="mdi mdi-magnify"></i>Buscar Eventos</a></li>
+            <li><a href="meus-dados.html"><i class="mdi mdi-archive"></i>Meus Dados</a></li>
+            <li><a href="minhas-inscricoes.html"><i class="mdi mdi-square-edit-outline"></i>Minhas Inscrições</a></li>
+            <li><a href="meus-certificados.html" class="active"><i class="mdi mdi-file-pdf"></i>Meus Certificados</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-dashboard">
+        <h1 class="title-dashboard"><i class="mdi mdi-file-pdf"></i>Meus Certificados</h1>
+        <div class="lista-agendas-eventos">
+            <div class="item-agenda-eventos">
+                <figure>
+                    <img src="../../img/empreendedorismo-criativo.jpg" alt="Imagem da agenda">
+                </figure>
+                <a class="nome-agenda" href="../../evento.html" title="Ver evento">Nome do evento</a>
+                <div class="link-opcoes">
+                    <a class="red" title="Visualizar em PDF" onclick="viewPdf('certificado.pdf')"><i class="mdi mdi-file-pdf"></i></a>
+                    <a class="blue" href="https://www.w3schools.com/images/myw3schoolsimage.jpg" download title="Download do certificado"><i class="mdi mdi-download"></i></a>
+                </div>
+            </div>
+
+            <div class="item-agenda-eventos">
+                <figure>
+                    <img src="../../img/thumb_215_evento_big.png" alt="Imagem da agenda">
+                </figure>
+                <a class="nome-agenda" href="../../evento.html" title="Ver evento">Nome do evento</a>
+                <div class="link-opcoes">
+                    <a class="red" title="Visualizar em PDF" onclick="viewPdf('certificado.pdf')"><i class="mdi mdi-file-pdf"></i></a>
+                    <a class="blue" href="../../certificado/certificado.pdf" download id="btnDownloadCertificado" title="Download do certificado"><i class="mdi mdi-download"></i></a>
+                </div>
+            </div>
+
+            <div class="item-agenda-eventos">
+                <figure>
+                    <img src="../../img/eventos.png.3c18bb5de9295c762bb181ddcba901bd.png" alt="Imagem da agenda">
+                </figure>
+                <a class="nome-agenda" href="../../evento.html" title="Ver evento">Nome do evento</a>
+                <div class="link-opcoes">
+                    <a class="red" title="Visualizar em PDF" onclick="viewPdf('certificado.pdf')"><i class="mdi mdi-file-pdf"></i></a>
+                    <a class="blue" href="../../certificado/certificado.pdf" download id="btnDownloadCertificado" title="Download do certificado"><i class="mdi mdi-download"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div id="modalPdf" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModalPdf()">&times;</span>
+                <object type="application/pdf" class="box-pdf" id="boxPdf"></object>
+                <a href="../../certificado/certificado.pdf" download="Certificado Konoha" class="btn btn-download"><i class="mdi mdi-download"></i>Download</a>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="../../js/konoha.js"></script>
+
+</html>

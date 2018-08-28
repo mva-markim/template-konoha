@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Konoha - Meus Dados</title>
+    <link href="../../mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/konoha.css">
+    <title>Konoha - Moderador</title>
+</head>
+
+<body>
+    <span class="btn-menu"><button onclick="btnMenuDashboard()"><i class="mdi mdi-menu" id="menuIcon"></i></button><i class="mdi mdi-xing"></i>onoha</span>
+    <nav class="menu" id="menuDashboard">
+        <div class="plano-de-fundo">
+            <figure>
+                <img src="../../img/13139233_976693842438104_1197872191447127231_n.jpg" alt="minha foto">
+            </figure>
+            <span>Jussara Rezende</span>
+        </div>
+        <button id="sair" class="btnSair" onmousemove="mudarTextoBotao()" onmouseout="voltarTextoBotao()"><i class="mdi mdi-circle"></i>Conectado</button>
+
+        <ul>
+            <li><a href="dashboard.html"><i class="mdi mdi-home"></i>Home</a></li>
+            <li><a href="meus-dados.html"><i class="mdi mdi-archive"></i>Meus Dados</a></li>
+            <li><a href="agendas.html"><i class="mdi mdi-book-variant"></i>Agendas de Eventos</a></li>
+            <li><a href="eventos.html"><i class="mdi mdi-star"></i>Eventos</a></li>
+            <li><a href="usuarios.html" class="active"><i class="mdi mdi-account-multiple"></i>Usuários</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-dashboard">
+        <h1 class="title-dashboard"><i class="mdi mdi-account-group"></i>Usuários</h1>
+        <a href="cadastrar-usuario.html" class="btn-criar-agenda"><i class="mdi mdi-account-plus"></i>Cadastrar usuário</a>
+
+        <form action="" class="form-pesquisa">
+            <input type="text" name="paramentoBusca" id="parametoBusca" placeholder="Pesquisar nome, tipo ou CPF do usuário"><button type="submit"><i class="mdi mdi-magnify"></i></button>
+        </form>
+
+        <div class="usuarios">
+            <div class="usuario">
+                <figure>
+                    <img src="../../img/photo 3x4/20121217024457bbca8f6eb170b68e140bc23b1cb232a4.jpg" alt="">
+                </figure>
+                <span class="nome-usuario"><i class="mdi mdi-account"></i>Nome Completo do usuário</span>
+                <span class="tipo-usuario"><i class="mdi mdi-account-settings-variant"></i>Moderador(a)</span>
+                <div class="opcoes">
+                    <a href="editar-usuario.html"><i class="mdi mdi-pencil"></i>Editar</a>
+                    <a href="detalhar-usuario.html"><i class="mdi mdi-view-list"></i>Detalhar</a>
+                    <a href=""><i class="mdi mdi-delete-empty"></i>Excluir</a>
+                </div>
+            </div>
+
+            <div class="usuario">
+                <figure>
+                    <img src="../../img/photo 3x4/d80a2730350d3668d2d760da8f35cba5.jpg" alt="">
+                </figure>
+                <span class="nome-usuario"><i class="mdi mdi-account"></i>Nome Completo do usuário</span>
+                <span class="tipo-usuario"><i class="mdi mdi-account-settings-variant"></i>Aluno(a)</span>
+                <div class="opcoes">
+                    <a href="editar-usuario.html"><i class="mdi mdi-pencil"></i>Editar</a>
+                    <a href="detalhar-usuario.html"><i class="mdi mdi-view-list"></i>Detalhar</a>
+                    <a href=""><i class="mdi mdi-delete-empty"></i>Excluir</a>
+                </div>
+            </div>
+
+            <div class="usuario">
+                <figure>
+                    <img src="../../img/photo 3x4/pas-foto-3x4-background-merah-6.jpg" alt="">
+                </figure>
+                <span class="nome-usuario"><i class="mdi mdi-account"></i>Nome Completo do usuário</span>
+                <span class="tipo-usuario"><i class="mdi mdi-account-settings-variant"></i>Admin</span>
+                <div class="opcoes">
+                    <a href="editar-usuario.html"><i class="mdi mdi-pencil"></i>Editar</a>
+                    <a href="detalhar-usuario.html"><i class="mdi mdi-view-list"></i>Detalhar</a>
+                    <a href=""><i class="mdi mdi-delete-empty"></i>Excluir</a>
+                </div>
+            </div>
+
+            <div class="usuario">
+                <figure>
+                    <img src="../../img/photo 3x4/o5xvxGY.jpg" alt="">
+                </figure>
+                <span class="nome-usuario"><i class="mdi mdi-account"></i>Nome Completo do usuário</span>
+                <span class="tipo-usuario"><i class="mdi mdi-account-settings-variant"></i>Aluno(a)</span>
+                <div class="opcoes">
+                    <a href="editar-usuario.html"><i class="mdi mdi-pencil"></i>Editar</a>
+                    <a href="detalhar-usuario.html"><i class="mdi mdi-view-list"></i>Detalhar</a>
+                    <a href=""><i class="mdi mdi-delete-empty"></i>Excluir</a>
+                </div>
+            </div>
+
+            <div class="usuario">
+                <figure>
+                    <img src="../../img/photo 3x4/Valeriy_Konovalyuk_3x4.jpg" alt="">
+                </figure>
+                <span class="nome-usuario"><i class="mdi mdi-account"></i>Nome Completo do usuário</span>
+                <span class="tipo-usuario"><i class="mdi mdi-account-settings-variant"></i>Participante</span>
+                <div class="opcoes">
+                    <a href="editar-usuario.html"><i class="mdi mdi-pencil"></i>Editar</a>
+                    <a href="detalhar-usuario.html"><i class="mdi mdi-view-list"></i>Detalhar</a>
+                    <a href=""><i class="mdi mdi-delete-empty"></i>Excluir</a>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+</body>
+
+<script src="../../js/konoha.js"></script>
+
+</html>

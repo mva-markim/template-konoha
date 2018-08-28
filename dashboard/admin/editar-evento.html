@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../../mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/konoha.css">
+    <title>Konoha - Moderador</title>
+</head>
+
+<body>
+    <span class="btn-menu">
+        <button onclick="btnMenuDashboard()">
+            <i class="mdi mdi-menu" id="menuIcon"></i>
+        </button>
+        <i class="mdi mdi-xing"></i>onoha</span>
+    <nav class="menu" id="menuDashboard">
+        <div class="plano-de-fundo">
+            <figure>
+                <img src="../../img/13139233_976693842438104_1197872191447127231_n.jpg" alt="minha foto">
+            </figure>
+            <span>Jussara Rezende</span>
+        </div>
+        <button id="sair" class="btnSair" onmousemove="mudarTextoBotao()" onmouseout="voltarTextoBotao()"><i class="mdi mdi-circle"></i>Conectado</button>
+
+        <ul>
+            <li><a href="dashboard.html"><i class="mdi mdi-home"></i>Home</a></li>
+            <li><a href="meus-dados.html"><i class="mdi mdi-archive"></i>Meus Dados</a></li>
+            <li><a href="agendas.html"><i class="mdi mdi-book-variant"></i>Agendas de Eventos</a></li>
+            <li><a href="eventos.html" class="active"><i class="mdi mdi-star"></i>Eventos</a></li>
+            <li><a href="usuarios.html"><i class="mdi mdi-account-multiple"></i>Usuários</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-dashboard">
+
+        <h1 class="title-dashboard">
+            <i class="mdi mdi-star"></i>Editar evento</h1>
+        <a class="link-voltar" href="eventos.html">
+            <i class="mdi mdi-arrow-left"></i>Voltar</a>
+
+        <form class="criar-evento">
+
+            <div class="info">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)" class="btn-ctrl previous">
+                    <i class="mdi mdi-chevron-left"></i>
+                </button>
+                <h2 id="info">Selecione a agenda deste evento</h2>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)" class="btn-ctrl next">
+                    <i class="mdi mdi-chevron-right"></i>
+                </button>
+
+                <div class="indicators">
+                    <i class="mdi mdi-circle step"></i>
+                    <i class="mdi mdi-circle step"></i>
+                    <i class="mdi mdi-circle step"></i>
+                    <i class="mdi mdi-circle step"></i>
+                </div>
+            </div>
+
+
+            <div class="select-agenda tab">
+                <input type="radio" name="agenda" id="agenda1" value="agenda1">
+                <label for="agenda1" onclick="nextPrev(1)">
+                    <figure title="Nome da agenda">
+                        <img src="../../img/topo_2015.jpg">
+                        <figcaption>
+                            <i class="mdi mdi-check"></i>
+                        </figcaption>
+                    </figure>
+                    Nome de uma agenda de eventos bem grandão para teste objetivando visualizar o comportamento do layout desenvolvido nesse
+                    tipo de situação quepode ser comum
+                </label>
+
+                <input type="radio" name="agenda" id="agenda4" value="agenda4" checked>
+                <label for="agenda4" onclick="nextPrev(1)">
+                    <figure title="Nome da agenda">
+                        <img src="../../img/WhatsAppImage20180613at15.11.29.65b6080309774331b79e.jpeg">
+                        <figcaption>
+                            <i class="mdi mdi-check"></i>
+                        </figcaption>
+                    </figure>
+                    Nome da agenda de eventos
+                </label>
+
+                <input type="radio" name="agenda" id="agenda2" value="agenda2">
+                <label for="agenda2" onclick="nextPrev(1)">
+                    <figure title="Nome da agenda">
+                        <img src="../../img/topo_2015 (3).jpg">
+                        <figcaption>
+                            <i class="mdi mdi-check"></i>
+                        </figcaption>
+                    </figure>
+                    Nome da agenda de eventos
+                </label>
+
+                <input type="radio" name="agenda" id="agenda3" value="agenda3">
+                <label for="agenda3" onclick="nextPrev(1)">
+                    <figure title="Nome da agenda">
+                        <img src="../../img/topo_2015 (2).jpg">
+                        <figcaption>
+                            <i class="mdi mdi-check"></i>
+                        </figcaption>
+                    </figure>
+                    Nome da agenda de eventos
+                </label>
+            </div>
+
+            <div class="tab form-konoha">
+                <label for="nome" class="label-k">Nome do evento</label>
+                <input type="text" name="nome" id="nome" class="input-k" placeholder="Digite o nome do evento" value="O nome completo do evento sera aprsentado neste campo">
+                <label for="local" class="label-k">Local do evento</label>
+                <input type="text" name="local" id="local" class="input-k" placeholder="Digite o local do evento" value="Sala 03 - Anexo">
+                <label for="data" class="label-k">Dia do evento</label>
+                <input type="text" name="data" id="data" class="input-k" placeholder="dia/mês/ano" value="22/08/2018">
+                <label>Duração do evento</label>
+                <div class="duracao-evento">
+                    <input type="time" name="horaInicio" id="horaInicio" value="19:30">
+                    <span>ás</span>
+                    <input type="time" name="horaEncerramento" id="horaEncerramento" value="22:00">
+                </div>
+                <label for="descricao" class="label-k">Descreva o evento</label>
+                <textarea name="descricao" id="descricao" class="text-area-k" placeholder="Discorra sobre o evento" maxlength="250">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium.</textarea>
+            </div>
+
+            <div class="tab form-konoha form-responsive">
+                <label for="fotoPerfil">Imagem do evento</label>
+                <div class="preview-image">
+                    <label for="fotoPerfil" id="labelUploadImage" class="label-upload-image"><i class="mdi mdi-image"></i></label><input type="file" name="fotoPerfil" id="fotoPerfil" onchange="loadFile()"> <img id="previewImage" />
+                    <label for="fotoPerfil" class="cancel-upload" id="cancelUpload" onclick="cancelUpload()"><i class="mdi mdi-cancel"></i>Enviar outra imagem</label>
+                    <span id="info-image-preview"><i class="mdi mdi-information-variant"></i>Recomendamos uma imagem de tamanho: 1200x975 pixels</span>
+
+                </div>
+            </div>
+
+            <div class="tab">
+                <div class="select-moderadores">
+
+                    <input type="checkbox" id="m1" onchange="setModerador('1')">
+                    <label for="m1">
+                        <figure>
+                            <img src="../../img/pp.jpg" alt="">
+                            <figcaption>
+                                <i class="mdi mdi-check"></i>
+                            </figcaption>
+                        </figure>
+                        Rômulo Caldeira de Souza Maia
+                    </label>
+
+
+                    <input type="checkbox" id="m2" onchange="setModerador('2')">
+                    <label for="m2">
+                        <figure>
+                            <img src="../../img/13139233_976693842438104_1197872191447127231_n.jpg" alt="">
+                            <figcaption>
+                                <i class="mdi mdi-check"></i>
+                            </figcaption>
+                        </figure>   
+                        Jussara Rezende 
+                    </label>
+
+
+                    <input type="checkbox" id="m3" onchange="setModerador('3')">
+                    <label for="m3">
+                        <figure>
+                            <img src="../../img/m Mila-Kunis-Portrait.jpg" alt="">
+                            <figcaption>
+                                <i class="mdi mdi-check"></i>
+                            </figcaption>
+                        </figure>
+                        Milla Kunnins
+                    </label>
+
+
+                    <input type="checkbox" id="m4" onchange="setModerador('4')">
+                    <label for="m4">
+                        <figure>
+                            <img src="../../img/89417.jpg " alt=" "> 
+                            <figcaption>
+                                <i class="mdi mdi-check "></i>
+                            </figcaption>
+                        </figure>    
+                        Mr. Bean 
+                    </label>
+                </div>
+
+                <select name="moderadores" id="moderadores" multiple class="todos-moderadores ">
+                    <option value="1" selected>Rômulo</option>
+                    <option value="2">Milla Kunnins</option>
+                    <option value="3" selected>Jussara</option>
+                    <option value="4">Mr. Bean</option>
+                </select>
+
+                <button type="submit " class="btn btn-blue ">Criar evento</button>
+            </div>
+
+        </form>
+
+
+    </main>
+</body>
+<script src="../../js/konoha.js"></script>
+<script src="../../js/form-konoha.js"></script>
+</html>

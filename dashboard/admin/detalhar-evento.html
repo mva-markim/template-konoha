@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Konoha - Meus Dados</title>
+    <link href="../../mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/konoha.css">
+    <title>Konoha - Moderador</title>
+</head>
+
+<body>
+    <span class="btn-menu"><button onclick="btnMenuDashboard()"><i class="mdi mdi-menu" id="menuIcon"></i></button><i class="mdi mdi-xing"></i>onoha</span>
+    <nav class="menu" id="menuDashboard">
+        <div class="plano-de-fundo">
+            <figure>
+                <img src="../../img/13139233_976693842438104_1197872191447127231_n.jpg" alt="minha foto">
+            </figure>
+            <span>Jussara Rezende</span>
+        </div>
+        <button id="sair" class="btnSair" onmousemove="mudarTextoBotao()" onmouseout="voltarTextoBotao()"><i class="mdi mdi-circle"></i>Conectado</button>
+
+        <ul>
+            <li><a href="dashboard.html"><i class="mdi mdi-home"></i>Home</a></li>
+            <li><a href="meus-dados.html"><i class="mdi mdi-archive"></i>Meus Dados</a></li>
+            <li><a href="agendas.html"><i class="mdi mdi-book-variant"></i>Agendas de Eventos</a></li>
+            <li><a href="eventos.html" class="active"><i class="mdi mdi-star"></i>Eventos</a></li>
+            <li><a href="usuarios.html"><i class="mdi mdi-account-multiple"></i>Usuários</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-dashboard">
+        <h1 class="title-dashboard"><i class="mdi mdi-star"></i>Evento - Detalhes</h1>
+        <a class="link-voltar" href="eventos.html"><i class="mdi mdi-arrow-left"></i>Voltar</a>
+        <a href="editar-evento.html" class="link-editar-dados"><i class="mdi mdi-pencil"></i>Editar evento</a>
+        <dl class="page-details">
+            <dt>Nome do Evento: </dt>
+            <dd>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiuma to</dd>
+            <dt>Descrição:</dt>
+            <dd>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                quia vo</dd>
+            <dt>Data/Hora: </dt>
+            <dd>25/03/2018 - 19:30h</dd>
+            <dt>Carga horária: </dt>
+            <dd>3h</dd>
+            <dt>Numero de vagas: </dt>
+            <dd>40</dd>
+            <dt>Numero de inscritos: </dt>
+            <dd>37</dd>
+            <dt>Moderadores do evento:</dt>
+            <dd class="moderadores">
+                <figure><img src="../../img/kolinda-presidenta-da-croacia.jpg" title="Nome do moderador"></figure>
+                <figure><img src="../../img/13139233_976693842438104_1197872191447127231_n.jpg" title="Nome do moderador"></figure>
+                <figure><img src="../../img/m Mila-Kunis-Portrait.jpg" title="Nome do moderador"></figure>
+                <figure><img src="../../img/pp.jpg" title="Nome do moderador"></figure>
+            </dd>
+            <dt>Imagem do evento:</dt>
+
+            <dl><img src="../../img/Coding.png"></dl>
+
+        </dl>
+
+    </main>
+</body>
+<script src="../../js/konoha.js"></script>
+
+</html>
+
+</html

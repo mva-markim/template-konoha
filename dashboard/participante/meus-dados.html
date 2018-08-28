@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Konoha - Meus Dados</title>
+    <link href="../../mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/konoha.css">
+    <title>Konoha - Aluno</title>
+</head>
+
+<body>
+    <span class="btn-menu"><button onclick="btnMenuDashboard()"><i class="mdi mdi-menu" id="menuIcon"></i></button><i class="mdi mdi-xing"></i>onoha</span>
+    <nav class="menu" id="menuDashboard">
+        <div class="plano-de-fundo">
+            <figure>
+                <a href="alterar-foto.html" title="Alterar minha foto de perfil">
+                    <img src="../../img/Kristen-Bell.jpg" alt="minha foto">
+                </a>
+            </figure>
+            <span>Kristen Bell The Good Place</span>
+        </div>
+        <button id="sair" class="btnSair" onmousemove="mudarTextoBotao()" onmouseout="voltarTextoBotao()"> <i class="mdi mdi-circle"></i>Conectado</button>
+
+        <ul>
+            <li><a href="dashboard-aluno.html"><i class="mdi mdi-home"></i>Home</a></li>
+            <li><a href="../../home.html"><i class="mdi mdi-magnify"></i>Buscar Eventos</a></li>
+            <li><a href="meus-dados.html" class="active"><i class="mdi mdi-archive"></i>Meus Dados</a></li>
+            <li><a href="minhas-inscricoes.html"><i class="mdi mdi-square-edit-outline"></i>Minhas Inscrições</a></li>
+            <li><a href="meus-certificados.html"><i class="mdi mdi-file-pdf"></i>Meus Certificados</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-dashboard">
+        <h1 class="title-dashboard"><i class="mdi mdi-archive"></i>Meus Dados</h1>
+        <a href="alterar-foto.html" class="alterar-dados foto"><i class="mdi mdi-account"></i>Alterar minha foto</a>
+        <a href="alterar-senha.html" class="alterar-dados senha"><i class="mdi mdi-lock"></i>Alterar minha senha</a>
+        <a href="editar-meus-dados.html" class="link-editar-dados2"><i class="mdi mdi-pencil"></i>Editar meus dados</a>
+        <dl class="page-details">
+            <dt>Nome: </dt>
+            <dd>Juliana Alves de Souza Freitas dos Santos Carneiro Farias</dd>
+            <dt>CPF: </dt>
+            <dd>159.357.852-22</dd>
+            <dt>Matricula: </dt>
+            <dd>15000093864</dd>
+            <dt>Data de Nascimento:</dt>
+            <dd>17/03/1986</dd>
+            <dt>Genêro: </dt>
+            <dd>Feminino</dd>
+            <dt>Cadastrado(a) em: </dt>
+            <dd>25/04/2016</dd>
+        </dl>
+
+
+    </main>
+</body>
+<script src="../../js/konoha.js"></script>
+
+</html>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Konoha - Meus Dados</title>
+    <link href="../../mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/konoha.css">
+    <title>Konoha - Aluno</title>
+</head>
+
+<body>
+    <span class="btn-menu"><button onclick="btnMenuDashboard()"><i class="mdi mdi-menu" id="menuIcon"></i></button><i class="mdi mdi-xing"></i>onoha</span>
+    <nav class="menu" id="menuDashboard">
+        <div class="plano-de-fundo">
+            <figure>
+                <img src="../../img/rodolfocruz_1462736986_49.jpg" alt="minha foto">
+            </figure>
+            <span>Rodolfo Cruz</span>
+        </div>
+        <button id="sair" class="btnSair" onmousemove="mudarTextoBotao()" onmouseout="voltarTextoBotao()"><i class="mdi mdi-circle"></i>Conectado</button>
+
+        <ul>
+            <li><a href="dashboard.html"><i class="mdi mdi-home"></i>Home</a></li>
+            <li><a href="meus-dados.html"><i class="mdi mdi-archive"></i>Meus Dados</a></li>
+            <li><a href="agendas.html" class="active"><i class="mdi mdi-book-variant"></i>Agendas de Eventos</a></li>
+            <li><a href="meus-eventos.html"><i class="mdi mdi-star"></i>Meus Eventos</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-dashboard">
+        <h1 class="title-dashboard"><i class="mdi mdi-book"></i>Agenda - Detalhes</h1>
+        <a class="link-voltar" href="agendas.html"><i class="mdi mdi-arrow-left"></i>Voltar</a>
+        <a href="editar-agenda.html" class="link-editar-dados"><i class="mdi mdi-pencil"></i>Editar agenda</a>
+        <dl class="page-details">
+            <dt>Nome da Agenda: </dt>
+            <dd>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantiuma to</dd>
+            <dt>Data inicio: </dt>
+            <dd>25/03/2018</dd>
+            <dt>Data encerramento: </dt>
+            <dd>04/04/2018</dd>
+            <dt>Descrição:</dt>
+            <dd>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem
+                quia vo</dd>
+            <dt>Imagem da agenda:</dt>
+            <dl><img src="../../img/WhatsAppImage20180613at15.11.29.65b6080309774331b79e.jpeg"></dl>
+
+        </dl>
+    </main>
+</body>
+<script src="../../js/konoha.js"></script>
+
+</html>
+
+</html>

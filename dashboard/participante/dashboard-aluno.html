@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../../mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/konoha.css">
+    <title>Konoha - Aluno</title>
+</head>
+
+<body>
+    <span class="btn-menu"><button onclick="btnMenuDashboard()"><i class="mdi mdi-menu" id="menuIcon"></i></button><i class="mdi mdi-xing"></i>onoha</span>
+    <nav class="menu" id="menuDashboard">
+        <div class="plano-de-fundo">
+            <figure>
+                <a href="alterar-foto.html" title="Alterar minha foto de perfil">
+                    <img src="../../img/Kristen-Bell.jpg" alt="minha foto">
+                </a>
+            </figure>
+            <span>Kristen Bell The Good Place</span>
+        </div>
+        <button id="sair" class="btnSair" onmousemove="mudarTextoBotao()" onmouseout="voltarTextoBotao()"><i class="mdi mdi-circle"></i>Conectado</button>
+
+        <ul>
+            <li><a href="" class="active"><i class="mdi mdi-home"></i>Home</a></li>
+            <li><a href="../../home.html"><i class="mdi mdi-magnify"></i>Buscar Eventos</a></li>
+            <li><a href="meus-dados.html"><i class="mdi mdi-archive"></i>Meus Dados</a></li>
+            <li><a href="minhas-inscricoes.html"><i class="mdi mdi-square-edit-outline"></i>Minhas Inscrições</a></li>
+            <li><a href="meus-certificados.html"><i class="mdi mdi-file-pdf"></i>Meus Certificados</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-dashboard home-dashboard">
+        <h1 class="h1-title-dashboard"><i class="mdi mdi-xing"></i>onoha - Dashboard</h1>
+        <span class="mini-line"></span>
+        <i class="mdi mdi-emoticon" title="Estamos muito Felizes com a sua presença!!!"></i>
+
+        <span class="btn-qrcode" title="Meu Qr Code" onclick="openModalQrCode()"><i class="mdi mdi-qrcode"></i></span>
+
+
+        <div id="modalQrCode" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModalQrCode()">&times;</span>
+                <img src="../../img/QR+Code+Dicas+1400x1400.jpg">
+                <p>Apresente esse Qr Code para confirmar sua presença no evento.</p>
+            </div>
+        </div>
+
+
+    </main>
+</body>
+<script src="../../js/konoha.js"></script>
+
+</html>

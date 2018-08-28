@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/konoha.css">
+    <title>Konoha - Aluno</title>
+</head>
+
+<body>
+    <span class="btn-menu"><button onclick="btnMenuDashboard()"><i class="mdi mdi-menu" id="menuIcon"></i></button><i class="mdi mdi-xing"></i>onoha</span>
+    <nav class="menu" id="menuDashboard">
+        <div class="plano-de-fundo">
+            <figure>
+                <a href="alterar-foto.html" title="Alterar minha foto de perfil">
+                    <img src="../img/Kristen-Bell.jpg" alt="minha foto">
+                </a>
+            </figure>
+            <span>Kristen Bell The Good Place</span>
+        </div>
+        <button id="sair" class="btnSair" onmousemove="mudarTextoBotao()" onmouseout="voltarTextoBotao()"><i class="mdi mdi-circle"></i>Conectado</button>
+
+        <ul>
+            <li><a class="active"><i class="mdi mdi-home"></i>Home</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-dashboard home-dashboard">
+
+        <h1 class="h1-title-dashboard"><i class="mdi mdi-xing"></i>onoha - Messages</h1>
+
+        <!-- <p class="alert-float success"><i class="mdi mdi-check-circle-outline"></i><i class="mdi mdi-close" onclick="this.parentElement.style.display='none';"></i>Mensagem de sucesso.</p> -->
+        <p class="alert-float info"><i class="mdi mdi-information-outline"></i><i class="mdi mdi-close" onclick="this.parentElement.style.display='none';"></i>Menssagem informativa.</p>
+        <!-- <p class="alert-float warning"><i class="mdi mdi-alert"></i><i class="mdi mdi-close" onclick="this.parentElement.style.display='none';"></i>Mensagem de aviso.</p> -->
+        <!-- <p class="alert-float danger"><i class="mdi mdi-close-octagon-outline"></i><i class="mdi mdi-close" onclick="this.parentElement.style.display='none';"></i>Algo de errado não está certo.</p> -->
+        <!-- <p class="alert-float black"><i class="mdi mdi-android"></i><i class="mdi mdi-close" onclick="this.parentElement.style.display='none';"></i>Em alguns casos essa mensagem pode vir a ser util mas aqui esta somente para fins de teste.</p> -->
+
+    </main>
+</body>
+<script src="../js/konoha.js"></script>
+
+</html>

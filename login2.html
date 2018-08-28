@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <title>Konoha - Login</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+        * {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .background-login {
+            width: 100%;
+            height: 175px;
+            background: url('img/question-mark-2492009_1920.jpg') bottom center no-repeat;
+            background-size: cover;
+            animation: background-animation 2s linear 1;
+            border-radius: 5px 5px 0 0;
+            text-align: center;
+            padding-top: 35px;
+            color: #fff
+        }
+        
+        @keyframes background-animation {
+            from {
+                background-position: top center;
+            }
+            to {
+                background-position: bottom center;
+            }
+        }
+        
+        .box-login {
+            max-width: 380px;
+            margin: 130px auto 0;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, .2);
+        }
+        
+        .box-login a {
+            text-decoration: none;
+            color: #555
+        }
+        
+        .icon-login {
+            font-size: 80px;
+            display: block;
+            margin-bottom: 4px;
+        }
+        
+        .box-login h1 {
+            font-size: 25px;
+            background-color: rgba(0, 191, 255, 0.55);
+            background-image: linear-gradient(to bottom, transparent 1px, rgba(0, 0, 0, .2) 2px);
+            background-size: auto 2px;
+            padding: 5px;
+        }
+        
+        .box-login form {
+            padding: 25px 50px 40px;
+            border-top: none;
+        }
+        
+        .box-login input {
+            padding: 5px 10px;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            width: 100%;
+            margin: 15px 0 25px;
+            outline: 0;
+            font-size: 16px;
+            color: #333
+        }
+        
+        .box-login input:focus {
+            border-bottom: 1px solid rgb(0, 157, 209);
+            transition: all .5s;
+        }
+        
+        .box-login button {
+            font-size: 16px;
+            padding: 8px 15px;
+            width: 100px;
+            border: none;
+            border-radius: 5px;
+            outline: 0;
+            background-color: rgb(0, 157, 209);
+            color: #fff;
+            cursor: pointer;
+        }
+        
+        .box-login button:active {
+            transform: scale(0.97);
+        }
+        
+        .link-recuperar-senha {
+            display: block;
+            float: right;
+            font-size: 15px;
+            margin-top: -22px;
+        }
+        
+        .link-recuperar-senha:hover {
+            color: #000
+        }
+        
+        .link-criar-conta {
+            display: block;
+            padding: 8px 15px;
+            border: 1px solid #eee;
+            margin-top: 35px;
+            text-align: center
+        }
+        
+        .link-criar-conta i {
+            margin-right: 5px;
+        }
+        
+        .link-criar-conta:hover {
+            border: 1px solid #ccc;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="box-login">
+
+        <div class="background-login">
+            <span class="icon-login mdi mdi-lock-open-outline"></span>
+            <h1>Acesse sua conta</h1>
+        </div>
+
+        <form action="">
+
+            <input type="text" name="login" id="login" placeholder="email@address" />
+            <input type="password" name="senha" id="senha" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;" />
+            <button type="submit">Login</button>
+            <a href="" class="link-recuperar-senha">Esqueci minha senha</a>
+            <a href="" class="link-criar-conta"><i class="mdi mdi-account-plus"></i>Criar conta</a>
+        </form>
+
+
+    </div>
+</body>
+
+</html>

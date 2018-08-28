@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../../mdi/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../../css/konoha.css">
+    <title>Konoha - Moderador</title>
+</head>
+
+<body>
+    <span class="btn-menu"><button onclick="btnMenuDashboard()"><i class="mdi mdi-menu" id="menuIcon"></i></button><i class="mdi mdi-xing"></i>onoha</span>
+    <nav class="menu" id="menuDashboard">
+        <div class="plano-de-fundo">
+            <figure>
+                <img src="../../img/13139233_976693842438104_1197872191447127231_n.jpg" alt="minha foto">
+            </figure>
+            <span>Jussara Rezende</span>
+        </div>
+        <button id="sair" class="btnSair" onmousemove="mudarTextoBotao()" onmouseout="voltarTextoBotao()"><i class="mdi mdi-circle"></i>Conectado</button>
+
+        <ul>
+            <li><a href="dashboard.html"><i class="mdi mdi-home"></i>Home</a></li>
+            <li><a href="meus-dados.html"><i class="mdi mdi-archive"></i>Meus Dados</a></li>
+            <li><a href="agendas.html" class="active"><i class="mdi mdi-book-variant"></i>Agendas de Eventos</a></li>
+            <li><a href="eventos.html"><i class="mdi mdi-star"></i>Eventos</a></li>
+            <li><a href="usuarios.html"><i class="mdi mdi-account-multiple"></i>Usuários</a></li>
+        </ul>
+    </nav>
+
+    <main class="conteudo-dashboard">
+        <h1 class="title-dashboard"><i class="mdi mdi-book"></i>Criar nova agenda</h1>
+        <a href="agendas.html" class="link-voltar"><i class="mdi mdi-arrow-left"></i>Voltar</a>
+        <form class="form-konoha form-responsive">
+            <label for="nome" class="label-k">Nome da agenda de eventos</label><input type="text" name="nome" id="nome" class="input-k" placeholder="Digite o nome da agenda">
+
+            <label for="dataInicio" class="label-k">Data de inicio</label><input type="text" name="dataInicio" id="dataInicio" class="input-k" placeholder="dia/mês/ano">
+
+            <label for="dataEncerramento" class="label-k">Data de encerramento</label><input type="text" name="dataEncerramento" id="dataEncerramento" class="input-k" placeholder="dia/mês/ano">
+
+            <label for="descricao" class="label-k">Descrição</label><textarea name="descricao" id="descricao" class="text-area-k" placeholder="Discorra sobre a agenda" maxlength="250"></textarea>
+
+
+            <label>Imagem da agenda</label>
+            <div class="preview-image">
+                <label for="fotoPerfil" id="labelUploadImage" class="label-upload-image"><i class="mdi mdi-image"></i></label><input type="file" name="fotoPerfil" id="fotoPerfil" onchange="loadFile()"> <img id="previewImage" />
+                <label for="fotoPerfil" class="cancel-upload" id="cancelUpload" onclick="cancelUpload()"><i class="mdi mdi-cancel"></i>Enviar outra imagem</label>
+                <span id="info-image-preview"><i class="mdi mdi-information-variant"></i>Recomendamos uma imagem de tamanho: 993x304 pixels</span>
+            </div>
+            <button type="submit" class="btn btn-blue">Criar agenda</button>
+
+        </form>
+
+    </main>
+</body>
+<script src="../../js/konoha.js "></script>
+
+</html>
